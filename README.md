@@ -1,2 +1,10 @@
-# PasswordGenerator
-A Password generator capable of Creating a random password between 8 and 128 characters. It allows you to select which types of characters you would like to include in the randomly generated password
+Welcome to Password Generator v1.0
+
+How to Use:
+
+1. Click on the 'Generate Password' button
+
+2. Select the Criteria for your password
+
+3. Hit  submit and your new password will be given to you
+

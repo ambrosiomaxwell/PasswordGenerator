@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+
+  
+    
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" id='popUpWindow'>
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold"> Password Criteria </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+                    <!--Length of password slider --> 
+        <div class="modal-body mx-3">
+            <form>
+              <!-- Slider to select length of password-->
+              <div class="d-flex justify-content-center my-4">
+                <div class="w-70">
+                  <input type="range" class="custom-range" id="customRange11" min="8" max="128">
+                </div>
+                <span class="font-weight-bold text-primary ml-2 valueSpan2"></span>
+              </div>
+              </form>
+              
+                 <!--capital letters check box --> 
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="checkbox" id="upper" checked class="val">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Capital Letters (ABC)</label>
+          </div>
+
+                    <!-- Lowercase lettters checkbox --> 
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="checkbox" id="lower" checked class="val">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Lowercase lLtters (abc)</label>
+          </div>
+
+                    <!-- Symbols checkbox --> 
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="checkbox" id="symbols" checked class="val">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Symbols (!@#)</label>
+          </div>
+
+          <!-- Numbers checkbox--> 
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="checkbox" id="numbers" checked class="val">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Numbers (123)</label>
+          </div>
+          <br>
+  
+        </div>
+              <!-- Generate button--> 
+        <div class="modal-footer d-flex justify-content-center">
+          <button id ='final-button' class="btn btn-default" data-toggle="modal" data-target="#modalLoginForm">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Welcome to Password Generator v1.0</h1>
+      <p class="lead">Click on the Button to Select Password Criteria</p>
+    </div>
+
+    <div class="form-group row">
+        <input type="text" readonly class="form-control-plaintext" id="thePassword" value="Password will appear here">
+
+    </div>
+  
+
+  <div class="text-center">
+    <a id='botton' href="" class="btn btn-primary btn-rounded btn-lg btn-block mb-4" data-toggle="modal" data-target="#modalLoginForm">
+      Generate password</a>
+  </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
